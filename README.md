@@ -1,2 +1,1 @@
-# c_mysql_api
-Inserting SS command output to MySQL, using C api
+On enterprise Linux distros, the SS command should be installed by default.
