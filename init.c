@@ -63,7 +63,7 @@ int main(int argc, char ** argv)
 
         // Single query mode, designed to send a single query, extraneous to the rest of the prog
         if ((strcmp(argv[1], "-s") == 0)){
-                if (mysql_real_connect(mysql, "localhost", "root", "Slapmyassandcallmejulie99",
+                if (mysql_real_connect(mysql, "localhost", "USERNAME", "PASSWORD",
                    NULL, 0, NULL, 0) == NULL){
                         fprintf(stderr, "%s\n", mysql_error(mysql));
                         mysql_close(mysql);
@@ -82,7 +82,7 @@ int main(int argc, char ** argv)
                 printf("Incorrect number of parameters\n");
                 return 0;
         }
-        if (mysql_real_connect(mysql, "localhost", "root", "Slapmyassandcallmejulie99",
+        if (mysql_real_connect(mysql, "localhost", "USERNAME, "PASSWORD",
            NULL, 0, NULL, 0) == NULL){
                 fprintf(stderr, "%s\n", mysql_error(mysql));
                 mysql_close(mysql);
